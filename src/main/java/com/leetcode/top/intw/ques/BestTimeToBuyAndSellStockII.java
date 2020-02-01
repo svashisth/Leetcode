@@ -36,6 +36,12 @@ public class BestTimeToBuyAndSellStockII {
 	    return total;
 	}
 	
+	/**
+	 * Incorrect
+	 * 
+	 * @param prices
+	 * @return
+	 */
 	public int maxProfit_1(int[] prices) {
 		if (prices == null || prices.length == 0) {
 			return 0;

@@ -3,8 +3,6 @@
  */
 package com.leetcode.top.intw.ques.easy;
 
-import java.util.Arrays;
-
 /**
  * Given a string S, find the length of the longest substring T that contains at most k distinct characters.
  * 

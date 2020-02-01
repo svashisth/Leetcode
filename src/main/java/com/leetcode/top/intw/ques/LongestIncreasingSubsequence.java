@@ -45,8 +45,8 @@ public class LongestIncreasingSubsequence {
 					}
 				}
 			}
+			System.out.println("lengthOfLIS\t" + Arrays.toString(arr));
 		}
-		System.out.println("lengthOfLIS\t" + Arrays.toString(arr));
 		
 		return max+1;
 	}
