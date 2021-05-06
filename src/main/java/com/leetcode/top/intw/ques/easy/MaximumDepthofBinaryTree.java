@@ -3,6 +3,8 @@
  */
 package com.leetcode.top.intw.ques.easy;
 
+import com.leetcode.top.intw.ques.TreeNode;
+
 /**
  * @author AD79272
  *
@@ -79,15 +81,5 @@ public class MaximumDepthofBinaryTree {
 		int left = findMaxDepth(root.left);
 		int right = findMaxDepth(root.right);
 		return left > right ? left + 1 : right + 1;
-	}
-}
-
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
 	}
 }

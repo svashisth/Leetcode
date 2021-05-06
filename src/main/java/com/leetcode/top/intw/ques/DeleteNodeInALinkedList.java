@@ -1,5 +1,7 @@
 package com.leetcode.top.intw.ques;
 
+import com.leetcode.top.intw.common.ListNode;
+
 /**
  * https://leetcode.com/problems/delete-node-in-a-linked-list/
  *

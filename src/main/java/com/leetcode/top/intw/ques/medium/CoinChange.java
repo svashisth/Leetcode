@@ -57,7 +57,7 @@ public class CoinChange {
 					data[i] = Math.min(data[i], data[i - coins[j]] + 1);
 				}
 			}
-			System.out.println("coinChange\t" + Arrays.toString(data));
+//			System.out.println("coinChange\t" + Arrays.toString(data));
 		}
 
 		return data[amount] > amount ? -1 : data[amount];

@@ -1,4 +1,6 @@
-package com.leetcode.top.intw.ques;
+package com.leetcode.top.intw.ques.medium;
+
+import com.leetcode.top.intw.common.ListNode;
 
 /**
  * https://leetcode.com/problems/odd-even-linked-list/
@@ -71,27 +73,4 @@ public class OddEvenLinkedList {
 		
 		return ref;
 	}
-}
-
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode(int x) {
-		val = x;
-	}
-
-	@Override
-	public String toString() {
-		StringBuilder br = new StringBuilder(""+this.val);
-		ListNode tmpNext = this.next;
-		while(next != null)
-		{
-			br.append("-> [val=" + next.val + "]");
-			next = next.next;
-		}
-		this.next = tmpNext;
-		return br.toString();
-	}
-	
 }
