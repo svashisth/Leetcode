@@ -3,9 +3,6 @@
  */
 package com.leetcode.top.intw.ques.easy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * https://leetcode.com/problems/excel-sheet-column-number/
  *

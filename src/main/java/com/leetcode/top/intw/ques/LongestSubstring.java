@@ -1,8 +1,5 @@
 package com.leetcode.top.intw.ques;
 
-import java.util.Arrays;
-import java.util.List;
-
 /**
  * 
  * https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/

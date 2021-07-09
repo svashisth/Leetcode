@@ -1,7 +1,5 @@
 package com.leetcode.top.intw.ques.easy;
 
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Stack;
 
 /**

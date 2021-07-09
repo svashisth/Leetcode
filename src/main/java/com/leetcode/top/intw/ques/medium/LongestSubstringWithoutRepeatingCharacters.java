@@ -4,7 +4,6 @@
 package com.leetcode.top.intw.ques.medium;
 
 import java.util.Arrays;
-import java.util.Iterator;
 
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/

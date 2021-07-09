@@ -1,4 +1,4 @@
-package com.leetcode.top.intw.ques;
+package com.leetcode.top.intw.ques.easy;
 
 /**
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
