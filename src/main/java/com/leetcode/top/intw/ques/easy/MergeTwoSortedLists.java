@@ -5,11 +5,19 @@ import com.leetcode.top.intw.common.ListNode;
 public class MergeTwoSortedLists {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] ar1 = {1,2,4};
+		ListNode l1 = ListNode.createList(ar1);
+		System.out.println(l1);
+		
+		int[] ar2 = {1,3,4};
+		ListNode l2 = ListNode.createList(ar2);
+		System.out.println(l2);
+		
+		ListNode node = mergeTwoLists(l1, l2);
+		System.out.println(node);
 	}
 
-	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+	public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		if(l1 == null && l2 == null)
 		{
 			return null;
@@ -25,6 +33,7 @@ public class MergeTwoSortedLists {
 		}
 		
 		ListNode l = new ListNode();
+		ListNode head = l;
 		while (l1 != null || l2 != null)
 		{
 			if(l1 == null)
@@ -49,23 +58,26 @@ public class MergeTwoSortedLists {
 			}
 			else
 			{
+				ListNode lN = new ListNode();
+				l.next = lN;
 				if(l1.val <= l2.val)
 				{
-					l.val = l1.val;
+					lN.val = l1.val;
 					l1 = l1.next;
 				}
 				else
 				{
-					l.val = l2.val;
+					lN.val = l2.val;
 					l2 = l2.next;
 				}
-				ListNode lN = new ListNode();
-				l.next = lN;
 				l = l.next;
 			}
 		}
-		
-		return l;
+		if(head.val == 0)
+		{
+			head = head.next;
+		}
+		return head;
 	}
 	
 }

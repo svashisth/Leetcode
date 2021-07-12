@@ -14,7 +14,7 @@ public class ListNode {
 
 	@Override
 	public String toString() {
-		StringBuilder br = new StringBuilder(""+this.val);
+		StringBuilder br = new StringBuilder("[val="+this.val+"]");
 		ListNode tmpNext = this.next;
 		while(next != null)
 		{
