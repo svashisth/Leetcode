@@ -1,8 +1,5 @@
 package com.leetcode.top.intw.ques;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class TreeUtil {
 
 	public static void inOrderTraversal(TreeNode node) {

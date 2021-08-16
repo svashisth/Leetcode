@@ -6,6 +6,8 @@ package com.leetcode.top.intw.ques.easy;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.leetcode.top.intw.common.ListNode;
+
 /**
  * https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/603/
  * https://leetcode.com/explore/featured/card/top-interview-questions-easy/93/linked-list/560/
@@ -253,27 +255,5 @@ public class RemoveNthNodeFromEndofList {
 		
 		return root;
 	}
-
 	
-}
-
-class ListNode {
-	int val;
-	ListNode next;
-
-	ListNode(int x) {
-		val = x;
-	}
-
-	@Override
-	public String toString() {
-		ListNode root = this;
-		StringBuilder a = new StringBuilder();
-		do
-		{
-			a.append("->"+root.val);
-			root = root.next;
-		}while(root != null);
-		return a.toString();
-	}
 }

@@ -63,8 +63,7 @@ public class MaximumDepthofBinaryTree {
 	}
 
 	public int maxDepth(TreeNode root) {
-		int maxDepth = findMaxDepth(root);
-		return maxDepth;
+		return findMaxDepth(root);
 	}
 
 	/**
@@ -78,8 +77,8 @@ public class MaximumDepthofBinaryTree {
 		{
 			return 0;
 		}
-		int left = findMaxDepth(root.left);
-		int right = findMaxDepth(root.right);
-		return left > right ? left + 1 : right + 1;
+		int left = findMaxDepth(root.left) + 1;
+		int right = findMaxDepth(root.right) + 1;
+		return left > right ? left: right;
 	}
 }
